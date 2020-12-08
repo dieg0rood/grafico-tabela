@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grafico e Tabela</title>
+        
+
+        <link href="css/c3.css" rel="stylesheet" type="text/css">
+        <link rel = "stylesheet"  href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"> 
+        
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="js/c3.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>  
+
+        <style>
+            #table{
+                font-size: small;
+            }
+        </style>
+
+    </head>
+
+    
+
+    <body>
+        
+        <div class=container-fluid>
+            <div class = "card-panel teal lighten-2">
+                <h1>Evolução Mensal de Contratos</h1>
+            </div>
+            <br>
+            <div>
+                <h3>Grafico</h3>
+            </div>
+            <br>
+            <div id="chart"></div>
+
+            <!-- SCRIPT PARA GERAR O GRAFICO -->
+            <script src="js/create-graph.js"></script>
+
+            <div>
+                <h3>Tabela</h3>
+            </div>
+            <br>
+            <table id="table" class="bordered striped centered"></table>
+
+            <!-- SCRIPT PARA GERAR A TABELA-->
+            <script src="js/create-table.js"></script>
+        </div>
+
+
+    </body>
+</html>
